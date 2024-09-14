@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    /* overflow-x: hidden; */
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #161813;
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100px;
+    padding: 20px 10vw;
+}
+
+.navbar.bg{
+    background: #161813;
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.logo{
+    height: 50px;
+    margin-top: 10px;
+}
+
+.link-item{
+    margin: 0 20px;
+    transition: .5s;
+}
+
+.link-item a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.link-item:hover{
+    transform: scale(1.2);
+}
+
+.wrapper{
+    padding-top: 1.2rem;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-color: #0c1d0b;
+}
+.bg{
+    
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right:5rem ;
+    margin-bottom: 5rem;
+    /* border: 1px solid black; */
+    /* background-color: #1c1919; */
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.left{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+.left :nth-child(2){
+    position: absolute;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-style: italic */
+    font-weight: 450;
+    font-size: 3.5rem;
+    top: 12.5rem;
+    font-style: oblique;
+    left: 5rem;
+
+}
+.left :nth-child(3){
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-style: italic */
+    font-weight: 520;
+    font-size: 1.6rem;
+    top: 22rem;
+    /* background-color: transparent; */
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    font-style: oblique;
+    left: 5rem;
+    cursor: pointer;
+    
+}
+.left>img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    width: 750px;
+}
+.right{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    position: relative;
+    /* margin-top: 15rem; */
+    height: 82.1vh;
+    width: 80vw;
+}
+.right>h1{
+    position: absolute;
+    top: 12rem;
+    font-family: sans-serif;
+    font-weight: 750;
+    left: 8rem;
+    font-size: 2.5rem;
+
+}
+.right>.inputBox1{
+    position: absolute;
+    top: 19rem;
+    left: 6rem;
+    padding: 0 1rem;
+}
+.inputBox1>#name{
+    padding: 0 1rem;
+    height: 35px;
+    width: 17rem;
+    border-radius: 1rem;
+}
+
+.pass{
+    position: absolute;
+    top: 23rem;
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem; */
+    left: 9rem;
+}
+
+.pass>#psw{
+    border-radius: 1rem;
+    height: 35px;
+    width: 10rem;
+    padding: 0 1rem;
+    width: 17.2rem;
+}
+.registerbtn{
+    position: absolute;
+    left: 9rem;
+    top: 27.5rem;
+    border-radius: 1rem;
+    height: 35px;
+    width: 17rem;
+    background-color: rgba(32, 207, 32, 0.679);
+    padding: 0 1.5rem;
+    font-size: large;
+    font-family: sans-serif;
+    cursor: pointer ;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+.registerbtn:hover{
+    background-color: #0b0b0b;
+    color: #fff;
+    /* width: 20rem; */
+    padding: 0 1.2rem;
+    transition: 0.6s ease-in-out;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    position: absolute;
+    top: 40rem;
+    left: 2rem;
+    /* background: transparent;
+    color: rgb(149, 0, 0); */
+    z-index: 99;
+  }
+  
+  .fa-twitter {
+    position: absolute;
+    top: 40rem;
+    left: 5rem;
+    /* background: transparent; */
+    /* color: rgb(202, 0, 0); */
+    z-index: 99;
+  }
+  .fa-instagram {
+    position: absolute;
+    top: 40rem;
+    left: 8rem;
+    /* background: transparent;
+    color: rgb(210, 2, 2); */
+    z-index: 99;
+  }
+  
