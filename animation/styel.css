@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+  }
+
+  .crazy-box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    animation: crazy-animation 5s infinite ease-in-out;
+  }
+
+  @keyframes crazy-animation {
+    0% {
+      transform: rotate(0deg) scale(1) translate(0, 0);
+      background-color: red;
+      box-shadow: 0 0 20px white, 0 0 40px cyan, 0 0 60px lime;
+    }
+    25% {
+      transform: rotate(180deg) scale(1.2) translate(-50px, 100px);
+      background-color: cyan;
+      box-shadow: 0 0 30px magenta, 0 0 50px yellow, 0 0 70px white;
+    }
+    50% {
+      transform: rotate(360deg) scale(0.8) translate(50px, -100px);
+      background-color: lime;
+      box-shadow: 0 0 40px yellow, 0 0 60px magenta, 0 0 80px cyan;
+    }
+    75% {
+      transform: rotate(540deg) scale(1.5) translate(-50px, 50px);
+      background-color: magenta;
+      box-shadow: 0 0 50px white, 0 0 70px lime, 0 0 90px cyan;
+    }
+    100% {
+      transform: rotate(720deg) scale(1) translate(0, 0);
+      background-color: red;
+      box-shadow: 0 0 60px cyan, 0 0 80px lime, 0 0 100px white;
+    }
+  }  
