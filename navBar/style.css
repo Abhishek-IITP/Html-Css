@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.crazy-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 10;
+    transition: background 0.4s ease;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #ff5722;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    transition: transform 0.6s ease;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav-links li a:hover {
+    color: #ff5722;
+}
+
+.nav-links li a::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff5722;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.nav-links li a:hover::after {
+    transform: scaleX(1);
+}
+
+.hero {
+    text-align: center;
+    padding: 150px 0;
+    background: url('https://source.unsplash.com/1600x900/?travel') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 4em;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.toggle-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+}
